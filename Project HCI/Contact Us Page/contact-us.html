@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./contact-us.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Luxurious+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navigation">
+        <div class="brand-name">
+            <span class="brand-text">VKellog's</span>
+        </div>
+        <nav class="nav-button">
+            <div class="nav-box">
+                <div id="button1" class="nav-link">Home</div>
+                <div id="button2" class="nav-link">Product</div>
+                <div id="button3" class="nav-link">Recipes</div>
+                <div id="button4" class="nav-link">About Us</div>
+                <div id="button5" class="nav-link">Contact Us</div>
+            </div>
+        </nav>
+    </div>
+    <div class="header">
+        <div class="container">
+            <span>Contact Us</span>
+        </div>
+    </div>
+    <div class="main">
+        <!-- <div class="line"></div> -->
+        <div class="form">
+            <form id="contact">
+                <div class="form-group">
+                    <label for="first-name">First Name [Minimum 3 characters] : </label>
+                    <input type="text" id="first-name" placeholder="First Name">
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name :</label>
+                    <input type="text" id="last-name" placeholder="Last Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" placeholder="Email">
+                </div>
+                <!-- <div class="form-group">
+                    <label for="password">Password [Minimum 8 characters] :</label>
+                    <input type="password" id="password">
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password : </label>
+                    <input type="password" id="confirmPassword">
+                </div> -->
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="Phone Number">
+                </div>
+                <div class="form-group">
+                    <label for="age">Age : </label>
+                    <select id="age">
+                        <option value="">Select...</option>
+                        <option value="&lt;18"> &lt;18 </option>
+                        <option value="18-25">18 - 25</option>
+                        <option value="26 - 35">26 - 35</option>
+                        <option value="35 - 50">35 - 50</option>
+                        <option value="&gt;50">&gt;50</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender : </label>
+                    <select id="gender">
+                        <option value="">Select...</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="first-name">Critics and Suggestions : </label>
+                    <textarea rows="5" id="messages" placeholder="Critics and Suggestions"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="terms">
+                    <label for="terms">I agree to the terms and conditions</label>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="logoF"><img src="../Assets/vk_logo-removebg-preview.png"></div>
+        <div class="schedule">
+            <span class="open-7-days">Open 7 Days</span>
+            <span class="weekdays">Weekdays : 6am - 11pm</span>
+            <span class="weekends">Weekends : 6am - 3am</span>
+        </div>
+        <div class="empty-space"></div>
+        <div class="footer-container">
+            <div class="soc-med">
+                <span>
+                    Our Social Media : 
+                </span>
+                <div class="insta" id="ig">
+                    <img id="ig" src="../Assets/insta-removebg-preview.png" alt="">
+                </div>
+                <div class="youtube" id="yt">
+                    <img id="yt" src="../Assets/youtube-logo-png-youtube-icon-transparent_cut.png" alt="">
+                </div>
+            </div>
+            <div class="address">
+                <span>Address : 934 North Colony Road, CT 84672, Battle Creek, Michigan, United States.</span>
+            </div>
+            <div class="number">
+                <span>Phone : 203-265-0730</span>
+            </div>
+        </div>
+    </div>
+    <script src="../script.js"></script>
+    <script src="./contact-script.js"></script>
+</body>
+</html>

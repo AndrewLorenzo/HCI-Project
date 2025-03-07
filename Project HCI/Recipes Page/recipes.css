@@ -1,0 +1,313 @@
+body {
+    margin: 0;
+}
+.navigation {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(199, 180, 131, 1);
+    top: 0;
+    z-index: 1000;
+}
+.brand-name {
+    position: relative;
+    width: 30%;
+    height: auto;
+    left: 50px;
+    flex-shrink: 0;
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Ensures text does not overflow */
+    text-overflow: ellipsis;
+}
+.brand-text {
+    font-size: 60px;
+    font-weight: bolder;
+    font-family: 'brush script mt', cursive;
+    cursor: pointer;
+}
+.nav-button {
+    display: flex;
+    right: 35px;
+    height: 73px;
+    flex-direction: row;
+    position: relative;
+    justify-content: flex-end;
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Ensures text does not overflow */
+}
+.nav-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.button1, .button2, .button3, .button4, .button5 {
+    display: flex;
+    height: 73px;
+    justify-content: center;
+    align-items: center;
+}
+.nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 25px;
+    cursor: pointer;
+    color: black;
+}
+.nav-link:hover {
+    background-color: rgba(149, 130, 81, 1);
+}
+.header {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 350px;
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Ensures text does not overflow */
+    background-image: url("../Assets/recipes-banner.jpg");
+    background-size: cover; 
+    background-position: center; 
+}
+.header::before, .adult-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Black color with 50% opacity */
+    z-index: 1;
+}
+.container span{
+    position: relative;
+    font-size: 100px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    color: #F5F5DC;
+}
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+}
+.main {
+    background-color: bisque;
+    padding: 20px;
+}
+.line {
+    position: relative;
+    width: 100%;
+    height: 5px; /* Thin line */
+    background-color: gray; /* Gray color */
+    border-radius: 10px;
+    margin: 10px auto; /* Center the line horizontally */
+}
+.title {
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.title-text {
+    font-family: "Inknut Antiqua", serif;
+    font-size: 40px; /* Adjust the font size as needed */
+    color: black; /* Adjust the text color as needed */
+}
+.product-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    justify-content: space-between;
+    gap: 20px;
+}
+.product-image {
+    display: flex;
+    align-self: center;
+    width: fit-content;
+    height: 100%;
+}
+.product-image img {
+    width: 300px;
+    height: 100%;
+}
+.product-box {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.product-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    padding-left: 20px;
+}
+.product-info .product-desc, .product-info .product-price {
+    font-family: "Montserrat", sans-serif;
+    color: black;
+}
+.product-name {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: "Inknut Antiqua", serif;
+}
+.product-desc {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.five-star {
+    position: relative;
+    display: flex;
+    align-self: center;
+    width: fit-content;
+    height: fit-content;
+}
+.five-star img {
+    width: 150px;
+    height: auto;
+}
+.ratings {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.ratings span {
+    position: relative;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: "Montserrat", sans-serif;
+    color: black; 
+}
+.learn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.learn button {
+    margin-top: 20px;
+    background-color: rgba(199, 180, 131, 1);
+    border-color: rgb(0, 0, 0);
+    width: 40%;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+.learn * span {
+    font-weight: bold;
+    font-size: large;
+}
+.learn button:hover {
+    background-color: rgba(199, 180, 131, 0.8);
+}
+.learn button:active {
+    background-color: rgba(149, 130, 81, 1);
+}
+.footer {
+    position: relative;
+    display: flex;
+    background-color: #987554;
+    height: 100px;
+    width: 100%;
+}
+.schedule {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-block: auto;
+    white-space: nowrap;
+}
+.schedule span {
+    font-size: 23px;
+    font-weight: bold;
+    color: white;
+    margin-right: 20px;
+}
+.empty-space {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: inherit;    
+}
+.footer-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    align-self: flex-end;
+    margin-block: auto;
+    padding-right: 10px;
+}
+.address span, .number span, .soc-med span {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.soc-med, .address, .number  {
+    position: relative;
+    display: flex;
+    align-self: flex-end;
+}
+.insta, .youtube{
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+}
+.insta img {
+    width: 35px;
+    height: 35px; 
+}
+.youtube img {
+    width: 50px;
+    height: 37px; 
+}
+.logoF {
+    display: flex;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+.logoF img {
+    display: flex;
+    width: 100px;
+    height: 100px; 
+}
+@media (max-width:768px) {
+    .brand-name {
+        display: none;
+    }
+    .product-box {
+        flex-direction: column;
+    }
+    .nav-button {
+        right: 0;
+    }
+    .navigation {
+        justify-content: center;
+    }
+    .container span {
+        font-size: 50px;
+    }
+    .title-text {
+        font-size: 20px;
+    }
+    .soc-med, .address, .number  {
+        display: none;
+    }
+}
